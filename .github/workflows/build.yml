@@ -16,3 +16,6 @@ jobs:
 
       - name: Compile checklists
         uses: alexnj/aviation-checklist-compiler-action@main
+        with:
+          pdf_output_group_heading: false
+          pdf_max_indented_text_height: 1000
