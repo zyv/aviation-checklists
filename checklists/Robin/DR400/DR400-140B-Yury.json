@@ -210,7 +210,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "ForeFlight Traffic layer active, Stratux leveled",
+              "prompt": "ForeFlight Traffic layer active",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
