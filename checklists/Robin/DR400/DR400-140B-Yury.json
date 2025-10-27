@@ -260,7 +260,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "(1) Keep hands & feet off controls (2) Keep quiet during T/O & landing (3) In case of emergency follow my instructions (4) Any questions?",
+              "prompt": "(1) Keep hands & feet off controls (2) Keep quiet during T/O & landing (3) In case of emergency follow my instructions",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
