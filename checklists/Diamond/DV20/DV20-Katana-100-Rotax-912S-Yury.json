@@ -225,14 +225,9 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Flight plan",
+              "prompt": "Flight plan (if submitted)",
               "expectation": "ACTIVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "If submitted",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
             },
             {
               "prompt": "Departure briefing",
@@ -673,14 +668,9 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Flight plan",
+              "prompt": "Flight plan (if submitted)",
               "expectation": "CLOSED",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "If submitted",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
             },
             {
               "prompt": "Aircraft logbook",
