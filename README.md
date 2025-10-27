@@ -7,7 +7,7 @@ several popular EFIS/EFB compliant formats.
 ## Using
 
 <a href="https://github.com/alexnj/aviation-checklists/releases/latest">
-<img align="right" width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/1a340be4-5c9e-4768-92cc-daa18aacfa57" />
+<img align="right" width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/e24d31b3-c8d4-4d5a-891d-b744ab02210e" />
 </a>
 
 > [!IMPORTANT]
