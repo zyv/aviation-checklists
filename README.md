@@ -1,4 +1,5 @@
 # General Aviation Checklists
+[![Build Checklists](https://github.com/alexnj/aviation-checklists/actions/workflows/build.yml/badge.svg)](https://github.com/alexnj/aviation-checklists/actions/workflows/build.yml)
 
 This repository is a template for creating and sharing electronic (and paper)
 general aviation checklists and provides automation for compiling it into
