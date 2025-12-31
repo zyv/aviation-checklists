@@ -1,0 +1,706 @@
+{
+  "metadata": {
+    "name": "DKLEF",
+    "makeAndModel": "DIMO / Diamond HK 36 TC Super Dimona"
+  },
+  "groups": [
+    {
+      "title": "Preflight",
+      "checklists": [
+        {
+          "title": "Before engine start",
+          "items": [
+            {
+              "prompt": "Fuel drained",
+              "expectation": "CLEAR",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Tow bar",
+              "expectation": "REMOVED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Engine time",
+              "expectation": "RECORDED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Preflight check",
+              "expectation": "COMPLETED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Incl. oil level after turning prop, refill 200 ml to 1/2 if under MIN",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Tyre pressure: 1.8 bar (front) and 2.3 bar (sides)",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Internal check",
+              "expectation": "PERFORMED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Headphones",
+              "expectation": "CONNECTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Seat back rest",
+              "expectation": "INSERTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Rudder pedals",
+              "expectation": "ADJUSTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Seat belts",
+              "expectation": "FASTENED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Controls",
+              "expectation": "FULL, FREE & CORRECT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Canopy",
+              "expectation": "CLOSED & LOCKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel valve",
+              "expectation": "OPEN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Circuit breakers",
+              "expectation": "ALL IN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Avionics switch",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Engine start",
+          "items": [
+            {
+              "prompt": "Parking brake",
+              "expectation": "SET",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Master switch",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Mode switch",
+              "expectation": "POWERED FLIGHT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel pressure light",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel quantity",
+              "expectation": "SUFFICIENT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller control",
+              "expectation": "FREE & FULL FORWARD",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "IDLE COLD, 5 MM WARM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Choke",
+              "expectation": "ON COLD, OFF WARM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Strobes",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller area",
+              "expectation": "CALL CLEAR",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Starter",
+              "expectation": "OPERATE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "1000 RPM, MAX. 1500 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Oil pressure",
+              "expectation": "GREEN ARC",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ammeter",
+              "expectation": "CHARGING",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "After engine start",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Choke",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel pressure light",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Avionics switch",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "COM/NAV",
+              "expectation": "SET FREQUENCIES",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "XPDR",
+              "expectation": "SET CODE & SBY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Instruments",
+              "expectation": "SET QNH & GYRO",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight Traffic layer active",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Briefings",
+          "items": [
+            {
+              "prompt": "Departure Information or ATIS",
+              "expectation": "OBTAINED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight plan (if submitted)",
+              "expectation": "ACTIVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Departure briefing",
+              "expectation": "DONE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 45 KT, Rotate 50 KT, Climb 60 KT, Best Glide 60 KT",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Emergency briefing",
+              "expectation": "DONE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) With insufficient runway best glide (70 KT) and turn to avoid obstacles",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Passenger briefing",
+              "expectation": "AS REQUIRED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "(1) Keep hands & feet off controls (2) Keep quiet during T/O & landing (3) In case of emergency follow my instructions",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Engine check",
+          "items": [
+            {
+              "prompt": "Parking brake",
+              "expectation": "SET",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airbrakes",
+              "expectation": "OUT, THEN LOCKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Oil temperature",
+              "expectation": "UP",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "1700 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Magnetos",
+              "expectation": "CHECK L/R DROP",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Carburator heat",
+              "expectation": "CHECK DROP",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "2000 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Oil pressure",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller control",
+              "expectation": "ACTUATE 1-3X",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Max. drop 1800 RPM, stay below FEATHER!",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "IDLE, THEN 1000 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "IDLE at ca. 650 RPM",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Before take-off",
+          "items": [
+            {
+              "prompt": "Magnetos",
+              "expectation": "BOTH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller",
+              "expectation": "FULL FORWARD",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Carburator heat",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Trim",
+              "expectation": "NEUTRAL",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airbrakes",
+              "expectation": "LOCKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Landing light",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Position lights as required",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "XPDR",
+              "expectation": "ALT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Gyro",
+              "expectation": "SET",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Parking brake",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        }
+      ],
+      "category": "normal"
+    },
+    {
+      "title": "Takeoff/Cruise",
+      "checklists": [
+        {
+          "title": "Departure",
+          "items": [
+            {
+              "prompt": "Take off",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "WOT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Check propeller at ca. 2500 RPM!",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Rotate",
+              "expectation": "50 KIAS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Initial climb",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Airspeed",
+              "expectation": "60 KIAS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Climb above 500' AGL",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Landing light",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller",
+              "expectation": "2400 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "End of green arc",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Cruise",
+          "items": [
+            {
+              "prompt": "Cruise (90 KT) 4500 ft - FF 15 L/H",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "23 INHG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller",
+              "expectation": "2200 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Cruise (85 KT) 4500 ft - FF 13 L/H",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "22 INHG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller",
+              "expectation": "2200 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Max. continuous power - FF 23 L/H",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "MAX",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller",
+              "expectation": "2400 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "End of green arc",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        }
+      ],
+      "category": "normal"
+    },
+    {
+      "title": "Landing",
+      "checklists": [
+        {
+          "title": "Landing",
+          "items": [
+            {
+              "prompt": "Downwind - 1000' AGL",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Landing light",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Carburator heat",
+              "expectation": "AS REQUIRED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "PULL BACK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airspeed (Vfe)",
+              "expectation": "80 KIAS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airspeed ",
+              "expectation": "70 KIAS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Base",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Propeller",
+              "expectation": "FULL FORWARD",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Final - 500' AGL",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Airbrakes",
+              "expectation": "As required",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airspeed",
+              "expectation": "60-65 KIAS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Go around",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "WOT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airspeed",
+              "expectation": "60 KIAS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airbrakes",
+              "expectation": "LOCKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        }
+      ],
+      "category": "normal"
+    },
+    {
+      "title": "Postflight",
+      "checklists": [
+        {
+          "title": "After landing",
+          "items": [
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Carburator heat",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Trim",
+              "expectation": "NEUTRAL",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airbrakes",
+              "expectation": "LOCKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Transponder",
+              "expectation": "SBY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Parking",
+          "items": [
+            {
+              "prompt": "Landing light",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Position lights off",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Avionics switch",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "IDLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Magnetos",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Check drop",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Electrical switches (excl. ACL)",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Master switch",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ignition key",
+              "expectation": "OUT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Engine time",
+              "expectation": "RECORDED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight plan (if submitted)",
+              "expectation": "CLOSED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Aircraft logbook",
+              "expectation": "FILL OUT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        }
+      ],
+      "category": "normal"
+    }
+  ]
+}
