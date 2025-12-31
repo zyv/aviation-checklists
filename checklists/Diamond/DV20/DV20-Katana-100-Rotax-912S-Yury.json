@@ -1,7 +1,8 @@
 {
   "metadata": {
     "name": "OECCS",
-    "makeAndModel": "DV20 / Diamond Katana DV-20"
+    "makeAndModel": "DV20 / Diamond Katana DV-20",
+    "modifiedTime": 1767187971
   },
   "groups": [
     {
@@ -510,6 +511,11 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Carburator heat",
+              "expectation": "AS REQUIRED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Throttle",
               "expectation": "PULL BACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -588,22 +594,12 @@
           "title": "After landing",
           "items": [
             {
-              "prompt": "Landing light",
+              "prompt": "Electric fuel pump",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Position lights off",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
-            },
-            {
-              "prompt": "Taxi light",
-              "expectation": "AS REQUIRED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Electric fuel pump",
+              "prompt": "Carburator heat",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -627,6 +623,16 @@
         {
           "title": "Parking",
           "items": [
+            {
+              "prompt": "Landing light",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Position lights off",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
             {
               "prompt": "Avionics switch",
               "expectation": "OFF",
