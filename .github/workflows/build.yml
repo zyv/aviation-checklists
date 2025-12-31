@@ -20,3 +20,5 @@ jobs:
           formats: 4col,fmd,ace
           pdf_output_group_heading: false
           pdf_max_indented_text_height: 1000
+          efis_editor_repository: rdamazio/efis-editor
+          efis_editor_ref: main
