@@ -574,6 +574,11 @@
               "type": "ITEM_TITLE"
             },
             {
+              "prompt": "Carburator heat",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Throttle",
               "expectation": "WOT",
               "type": "ITEM_CHALLENGE_RESPONSE"
