@@ -1,8 +1,7 @@
 {
   "metadata": {
     "name": "OECCS",
-    "makeAndModel": "DV20 / Diamond Katana DV-20",
-    "modifiedTime": 1767187971
+    "makeAndModel": "DV20 / Diamond Katana DV-20"
   },
   "groups": [
     {
@@ -91,7 +90,8 @@
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Engine start",
@@ -197,7 +197,7 @@
             },
             {
               "prompt": "COM/NAV",
-              "expectation": "SET FREQUENCIES",
+              "expectation": "SET FREQ",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -215,7 +215,8 @@
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Briefings",
@@ -236,7 +237,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 45 KT, Rotate 60 KT, Climb 65 & 70 KT, Best Glide 70 KT with Flaps T/O",
+              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 45 KT, Rotate 60 KT, Climb 65 & 70 KT, Best Glide 70 KT with Flaps T/O, Vref 60 KT",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -246,7 +247,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) With insufficient runway best glide (70 KT) and turn to avoid obstacles",
+              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) Insufficient RWY: best glide (70 KT) and turn to avoid obstacles (4) No impossible turn below 1000 AGL",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -260,7 +261,8 @@
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Engine check",
@@ -310,7 +312,8 @@
               "expectation": "IDLE, THEN 1000 RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Before take-off",
@@ -370,7 +373,8 @@
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
@@ -409,18 +413,8 @@
               "type": "ITEM_TITLE"
             },
             {
-              "prompt": "Landing light",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Electric fuel pump",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Flaps",
-              "expectation": "UP",
+              "prompt": "Airspeed",
+              "expectation": "70 KIAS",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -434,11 +428,22 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Airspeed",
-              "expectation": "70 KIAS",
+              "prompt": "Flaps",
+              "expectation": "UP",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Landing light",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Cruise",
@@ -485,7 +490,8 @@
               "expectation": "END OF GREEN ARC",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
@@ -582,7 +588,8 @@
               "expectation": "T/O",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
@@ -618,7 +625,8 @@
               "expectation": "GND",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Parking",
@@ -683,7 +691,8 @@
               "expectation": "FILL OUT",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
