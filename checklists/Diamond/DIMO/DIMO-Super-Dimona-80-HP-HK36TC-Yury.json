@@ -86,9 +86,14 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Avionics switch",
-              "expectation": "OFF",
+              "prompt": "Avionics",
+              "expectation": "ALL OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "No avionics master!",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -119,6 +124,11 @@
             {
               "prompt": "Fuel quantity",
               "expectation": "SUFFICIENT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Cowl flap",
+              "expectation": "OPEN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -191,13 +201,13 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Avionics switch",
-              "expectation": "ON",
+              "prompt": "Avionics",
+              "expectation": "ALL ON",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "COM/NAV",
-              "expectation": "SET FREQUENCIES",
+              "expectation": "SET FREQ",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -237,7 +247,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 45 KT, Rotate 50 KT, Climb 60 KT, Best Glide 60 KT",
+              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 45 KT, Rotate 50 KT, Climb 60 KT, Best Glide 60 KT, Vref 60 KT",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -247,7 +257,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) With insufficient runway best glide (70 KT) and turn to avoid obstacles",
+              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) Insufficient RWY: best glide (60 KT) and turn to avoid obstacles (4) No impossible turn below 1000 AGL",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -313,7 +323,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Max. drop 1800 RPM, stay below FEATHER!",
+              "prompt": "Max. drop 1800 RPM, stay above FEATHER!",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -433,16 +443,6 @@
               "type": "ITEM_TITLE"
             },
             {
-              "prompt": "Landing light",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Electric fuel pump",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Propeller",
               "expectation": "2400 RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -451,6 +451,16 @@
               "prompt": "End of green arc",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
+            },
+            {
+              "prompt": "Landing light",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -458,6 +468,20 @@
         {
           "title": "Cruise",
           "items": [
+            {
+              "prompt": "ECO Cruise (85 KT) 4500 ft - FF 13 L/H",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "22 INHG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller",
+              "expectation": "2200 RPM",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Cruise (90 KT) 4500 ft - FF 15 L/H",
               "type": "ITEM_TITLE"
@@ -473,17 +497,17 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Cruise (85 KT) 4500 ft - FF 13 L/H",
+              "prompt": "Fast cruise - FF ~18 L/H",
               "type": "ITEM_TITLE"
             },
             {
-              "prompt": "Throttle",
-              "expectation": "22 INHG",
+              "prompt": "Power",
+              "expectation": "1 INCH BELOW MAX",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Propeller",
-              "expectation": "2200 RPM",
+              "expectation": "2400 RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -561,13 +585,18 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Final - 500' AGL",
-              "type": "ITEM_TITLE"
+              "prompt": "Airbrakes",
+              "expectation": "AS REQUIRED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Airbrakes",
-              "expectation": "As required",
-              "type": "ITEM_CHALLENGE_RESPONSE"
+              "prompt": "Crack open only, use more if landing is assured",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
+              "prompt": "Final - 500' AGL",
+              "type": "ITEM_TITLE"
             },
             {
               "prompt": "Airspeed",
@@ -579,6 +608,16 @@
               "type": "ITEM_TITLE"
             },
             {
+              "prompt": "Airbrakes",
+              "expectation": "LOCKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Carburator heat",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Throttle",
               "expectation": "WOT",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -586,11 +625,6 @@
             {
               "prompt": "Airspeed",
               "expectation": "60 KIAS",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Airbrakes",
-              "expectation": "LOCKED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
@@ -616,13 +650,13 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Trim",
-              "expectation": "NEUTRAL",
+              "prompt": "Airbrakes",
+              "expectation": "LOCKED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Airbrakes",
-              "expectation": "LOCKED",
+              "prompt": "Trim",
+              "expectation": "NEUTRAL",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -647,8 +681,8 @@
               "indent": 1
             },
             {
-              "prompt": "Avionics switch",
-              "expectation": "OFF",
+              "prompt": "Avionics",
+              "expectation": "ALL OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
