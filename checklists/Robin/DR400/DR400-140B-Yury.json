@@ -85,7 +85,8 @@
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Engine start",
@@ -214,7 +215,8 @@
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Briefings",
@@ -235,7 +237,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 55 KT, Rotate 60 KT, Climb 80 & 85 KT, Best Glide 80 KT",
+              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 55 KT, Rotate 60 KT, Climb 80 & 85 KT, Best Glide 80 KT, Vref 65 KT",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -245,7 +247,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) With insufficient runway best glide (80 KT) and turn to avoid obstacles",
+              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) Insufficient RWY: best glide (80 KT) and turn to avoid obstacles (4) No impossible turn below 1000 AGL",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -259,7 +261,8 @@
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Engine check",
@@ -304,7 +307,8 @@
               "expectation": "IDLE, THEN 1000 RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Before take-off",
@@ -359,7 +363,8 @@
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
@@ -398,13 +403,8 @@
               "type": "ITEM_TITLE"
             },
             {
-              "prompt": "Landing light",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Electric fuel pump",
-              "expectation": "OFF",
+              "prompt": "EGT pointer",
+              "expectation": "SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -416,12 +416,28 @@
               "prompt": "Airspeed",
               "expectation": "85 KIAS",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Electric fuel pump",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Landing light",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Cruise",
           "items": [
+            {
+              "prompt": "Lean by EGT",
+              "expectation": "LOP -50 F",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Cruise (55%) MSL - FF 27 L/H",
               "type": "ITEM_TITLE"
@@ -449,7 +465,8 @@
               "expectation": "2700 RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
@@ -546,7 +563,8 @@
               "expectation": "T/O",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
@@ -602,7 +620,8 @@
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
           "title": "Parking",
@@ -667,7 +686,8 @@
               "expectation": "FILL OUT",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
-          ]
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
