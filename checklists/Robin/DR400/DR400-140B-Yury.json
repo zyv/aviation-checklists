@@ -192,7 +192,7 @@
             },
             {
               "prompt": "COM / NAV & DME",
-              "expectation": "SET FREQUENCIES",
+              "expectation": "SET FREQ",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -403,6 +403,16 @@
               "type": "ITEM_TITLE"
             },
             {
+              "prompt": "Airspeed",
+              "expectation": "85 KIAS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "MCT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "EGT pointer",
               "expectation": "SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -410,11 +420,6 @@
             {
               "prompt": "Flaps",
               "expectation": "UP",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Airspeed",
-              "expectation": "85 KIAS",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -547,6 +552,11 @@
             {
               "prompt": "Go around",
               "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Carburator heat",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Throttle",
