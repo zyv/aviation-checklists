@@ -237,7 +237,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 55 KT, Rotate 60 KT, Climb 80 & 85 KT, Best Glide 80 KT, Vref 65 KT",
+              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 55 KT, Rotate 60 KT, Climb 80 & 85 KT, Best Glide 80 KT, Vref 70 KT",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
