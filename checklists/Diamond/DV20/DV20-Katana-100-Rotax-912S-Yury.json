@@ -463,12 +463,12 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Cruise (65%) 6000 ft - FF 20 L/H",
+              "prompt": "Cruise (65%) 5000 ft - FF 20 L/H",
               "type": "ITEM_TITLE"
             },
             {
               "prompt": "Throttle",
-              "expectation": "22 INHG",
+              "expectation": "23 INHG",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
