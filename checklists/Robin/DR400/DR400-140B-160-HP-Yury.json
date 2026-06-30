@@ -1,7 +1,8 @@
 {
   "metadata": {
     "name": "OEDKA",
-    "makeAndModel": "DR40 / Robin DR400"
+    "makeAndModel": "DR40 / Robin DR400",
+    "modifiedTime": 1782814729
   },
   "groups": [
     {
@@ -11,9 +12,14 @@
           "title": "Before engine start",
           "items": [
             {
-              "prompt": "Fuel drained",
+              "prompt": "Fuel drained (x3)",
               "expectation": "CLEAR",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "First tanks, then gascolator!",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             },
             {
               "prompt": "Tow bar",
@@ -147,13 +153,18 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "After engine start",
-              "type": "ITEM_TITLE"
-            },
-            {
               "prompt": "Oil pressure",
               "expectation": "GREEN ARC",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ammeter",
+              "expectation": "CHARGING",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "After engine start",
+              "type": "ITEM_TITLE"
             },
             {
               "prompt": "Magnetos",
@@ -173,11 +184,6 @@
             {
               "prompt": "Alternator switch",
               "expectation": "ON",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Ammeter",
-              "expectation": "CHARGING",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -211,7 +217,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "ForeFlight Traffic layer active",
+              "prompt": "Check ForeFlight Traffic layer active",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
