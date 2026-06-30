@@ -1,7 +1,8 @@
 {
   "metadata": {
     "name": "DKLEF",
-    "makeAndModel": "DIMO / Diamond HK 36 TC Super Dimona"
+    "makeAndModel": "DIMO / Diamond HK 36 TC Super Dimona",
+    "modifiedTime": 1782815406
   },
   "groups": [
     {
@@ -221,7 +222,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "ForeFlight Traffic layer active",
+              "prompt": "Check ForeFlight Traffic layer active",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }

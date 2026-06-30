@@ -1,7 +1,8 @@
 {
   "metadata": {
     "name": "OECCS",
-    "makeAndModel": "DV20 / Diamond Katana DV-20"
+    "makeAndModel": "DV20 / Diamond Katana DV-20",
+    "modifiedTime": 1782814818
   },
   "groups": [
     {
@@ -211,7 +212,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "ForeFlight Traffic layer active",
+              "prompt": "Check ForeFlight Traffic layer active",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
