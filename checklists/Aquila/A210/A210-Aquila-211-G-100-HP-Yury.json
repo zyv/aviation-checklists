@@ -745,6 +745,11 @@
           "title": "Parking",
           "items": [
             {
+              "prompt": "Flaps",
+              "expectation": "LDG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Landing light",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
