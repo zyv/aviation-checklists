@@ -2,7 +2,7 @@
   "metadata": {
     "name": "OEABW",
     "makeAndModel": "A210 / Aquila 211 G",
-    "modifiedTime": 1782813902
+    "modifiedTime": 1783153421
   },
   "groups": [
     {
@@ -131,6 +131,11 @@
               "prompt": "Fuel quantity",
               "expectation": "SUFFICIENT",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "2x 60L (120L) total / 2x 55L (110L) usable",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             },
             {
               "prompt": "Electric fuel pump",

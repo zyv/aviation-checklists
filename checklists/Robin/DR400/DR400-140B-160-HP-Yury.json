@@ -2,7 +2,7 @@
   "metadata": {
     "name": "OEDKA",
     "makeAndModel": "DR40 / Robin DR400",
-    "modifiedTime": 1782814729
+    "modifiedTime": 1783153311
   },
   "groups": [
     {
@@ -131,6 +131,16 @@
               "prompt": "Carburator heat",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel quantity",
+              "expectation": "SUFFICIENT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "110L total, 109L usable, 50L aux",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             },
             {
               "prompt": "Electric fuel pump",

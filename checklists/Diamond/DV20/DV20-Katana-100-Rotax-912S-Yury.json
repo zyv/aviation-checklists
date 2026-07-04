@@ -2,7 +2,7 @@
   "metadata": {
     "name": "OECCS",
     "makeAndModel": "DV20 / Diamond Katana DV-20",
-    "modifiedTime": 1782814818
+    "modifiedTime": 1783153116
   },
   "groups": [
     {
@@ -121,6 +121,11 @@
               "prompt": "Fuel quantity",
               "expectation": "SUFFICIENT",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "79L total, 77L usable",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             },
             {
               "prompt": "Electric fuel pump",

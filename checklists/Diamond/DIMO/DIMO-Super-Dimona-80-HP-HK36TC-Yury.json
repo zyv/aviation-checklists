@@ -2,7 +2,7 @@
   "metadata": {
     "name": "DKLEF",
     "makeAndModel": "DIMO / Diamond HK 36 TC Super Dimona",
-    "modifiedTime": 1782815406
+    "modifiedTime": 1783153386
   },
   "groups": [
     {
@@ -126,6 +126,11 @@
               "prompt": "Fuel quantity",
               "expectation": "SUFFICIENT",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "79L total, 77L usable",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             },
             {
               "prompt": "Cowl flap",
