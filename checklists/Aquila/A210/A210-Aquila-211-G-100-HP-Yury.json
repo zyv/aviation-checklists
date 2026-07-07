@@ -87,11 +87,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Fuel selector",
-              "expectation": "FULLEST TANK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Circuit breakers",
               "expectation": "ALL IN",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -140,6 +135,11 @@
             {
               "prompt": "Electric fuel pump",
               "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel selector",
+              "expectation": "FULLEST TANK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -263,7 +263,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 50 KT, Rotate 50 KT, Climb 57 & 65 KT, Best Glide 80 KT, Vref 60 KT",
+              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 50 KT, Rotate 55 KT, Climb 57 & 65 KT, Best Glide 80 KT, Vref 60 KT",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -273,7 +273,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) Insufficient RWY: best glide (70 KT) and turn to avoid obstacles (4) No impossible turn below 1000 AGL",
+              "prompt": "(1) Reject T/O upon malfunctions (2) Engine failure after T/O: push down & land straight ahead (3) Insufficient RWY: best glide (80 KT) and turn to avoid obstacles (4) No impossible turn below 1000 AGL",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -291,10 +291,10 @@
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
-          "title": "ALT & Engine check",
+          "title": "Engine & ALT check",
           "items": [
             {
-              "prompt": "Engine runup",
+              "prompt": "Engine check",
               "type": "ITEM_TITLE"
             },
             {
@@ -343,7 +343,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Alternator test @ 1000 RPM",
+              "prompt": "Alternator check @ 1000 RPM (NVFR)",
               "type": "ITEM_TITLE"
             },
             {
