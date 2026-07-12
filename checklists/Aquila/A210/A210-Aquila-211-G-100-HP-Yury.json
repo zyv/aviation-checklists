@@ -291,7 +291,7 @@
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
-          "title": "Engine & ALT check",
+          "title": "Engine check",
           "items": [
             {
               "prompt": "Engine check",
@@ -341,7 +341,13 @@
               "prompt": "Throttle",
               "expectation": "IDLE, THEN 1000 RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Alternator check",
+          "items": [
             {
               "prompt": "Alternator check @ 1000 RPM (NVFR)",
               "type": "ITEM_TITLE"
