@@ -2,7 +2,7 @@
   "metadata": {
     "name": "DKLEF",
     "makeAndModel": "DIMO / Diamond HK 36 TC Super Dimona",
-    "modifiedTime": 1783153386
+    "modifiedTime": 1784490401
   },
   "groups": [
     {
@@ -236,6 +236,11 @@
               "prompt": "Departure Information or ATIS",
               "expectation": "OBTAINED",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Crosswind limit: 16 KT",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             },
             {
               "prompt": "Flight plan (if submitted)",

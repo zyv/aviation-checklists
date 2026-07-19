@@ -2,7 +2,7 @@
   "metadata": {
     "name": "OECCS",
     "makeAndModel": "DV20 / Diamond Katana DV-20",
-    "modifiedTime": 1783153116
+    "modifiedTime": 1784490433
   },
   "groups": [
     {
@@ -231,6 +231,11 @@
               "prompt": "Departure Information or ATIS",
               "expectation": "OBTAINED",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Crosswind limit: 15 KT",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             },
             {
               "prompt": "Flight plan (if submitted)",

@@ -243,6 +243,11 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Crosswind limit: 22 KT",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
               "prompt": "Flight plan (if submitted)",
               "expectation": "ACTIVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
