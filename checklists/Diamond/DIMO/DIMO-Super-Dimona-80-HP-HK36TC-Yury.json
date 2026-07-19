@@ -87,14 +87,9 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Avionics",
-              "expectation": "ALL OFF",
+              "prompt": "Avionics switch",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "No avionics master!",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -207,8 +202,8 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Avionics",
-              "expectation": "ALL ON",
+              "prompt": "Avionics switch",
+              "expectation": "ON",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -687,8 +682,8 @@
               "indent": 1
             },
             {
-              "prompt": "Avionics",
-              "expectation": "ALL OFF",
+              "prompt": "Avionics switch",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
