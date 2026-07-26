@@ -2,7 +2,7 @@
   "metadata": {
     "name": "OEDKA",
     "makeAndModel": "DR40 / Robin DR400",
-    "modifiedTime": 1783153311
+    "modifiedTime": 1784490483
   },
   "groups": [
     {
@@ -168,11 +168,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Ammeter",
-              "expectation": "CHARGING",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "After engine start",
               "type": "ITEM_TITLE"
             },
@@ -194,6 +189,11 @@
             {
               "prompt": "Alternator switch",
               "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ammeter",
+              "expectation": "CHARGING",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
