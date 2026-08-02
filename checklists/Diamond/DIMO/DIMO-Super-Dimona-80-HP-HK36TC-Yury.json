@@ -2,7 +2,7 @@
   "metadata": {
     "name": "DKLEF",
     "makeAndModel": "DIMO / Diamond HK 36 TC Super Dimona",
-    "modifiedTime": 1784490401
+    "modifiedTime": 1785667794
   },
   "groups": [
     {
@@ -253,7 +253,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 45 KT, Rotate 50 KT, Climb 60 KT, Best Glide 60 KT, Vref 60 KT",
+              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 45 KT, Rotate 50 KT, Climb 60 KT, Best Glide 60 KT, Vref 60 KT, Cruise with 22/2000",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },

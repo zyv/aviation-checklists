@@ -2,7 +2,7 @@
   "metadata": {
     "name": "OEDKA",
     "makeAndModel": "DR40 / Robin DR400",
-    "modifiedTime": 1784490483
+    "modifiedTime": 1785051047
   },
   "groups": [
     {
@@ -258,7 +258,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 55 KT, Rotate 60 KT, Climb 80 & 85 KT, Best Glide 80 KT, Vref 70 KT",
+              "prompt": "VFR on Runway __, Wind from __, Departure procedure __, Stall speed 55 KT, Rotate 60 KT, Climb 80 & 85 KT, Best Glide 80 KT, Vref 70 KT, Cruise with 2300/ROP on EGT",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
