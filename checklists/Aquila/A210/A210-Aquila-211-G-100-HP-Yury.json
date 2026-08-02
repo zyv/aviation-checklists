@@ -223,11 +223,11 @@
             },
             {
               "prompt": "XPDR",
-              "expectation": "SET CODE & ALT",
+              "expectation": "SET CODE & GND",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "GTX 328 detects GND automatically",
+              "prompt": "GTX 328 flips GND/ALT automatically",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -746,11 +746,11 @@
             },
             {
               "prompt": "Transponder",
-              "expectation": "ALT",
+              "expectation": "GND",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "For ground radar visibility during taxi, GTX 328 detects GND automatically",
+              "prompt": "For ground radar visibility during taxi, GTX 328 flips GND/ALT automatically",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
