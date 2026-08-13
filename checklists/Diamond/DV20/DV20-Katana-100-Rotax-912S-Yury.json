@@ -2,7 +2,7 @@
   "metadata": {
     "name": "OECCS",
     "makeAndModel": "DV20 / Diamond Katana DV-20",
-    "modifiedTime": 1785667822
+    "modifiedTime": 1786637963
   },
   "groups": [
     {
@@ -173,11 +173,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Ammeter",
-              "expectation": "CHARGING",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Annunciator lights",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -199,6 +194,11 @@
             {
               "prompt": "Avionics switch",
               "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ammeter",
+              "expectation": "CHARGING",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {

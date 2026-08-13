@@ -178,11 +178,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Ammeter",
-              "expectation": "CHARGING",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "After engine start",
               "type": "ITEM_TITLE"
             },
@@ -204,6 +199,11 @@
             {
               "prompt": "Avionics switch",
               "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ammeter",
+              "expectation": "CHARGING",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {

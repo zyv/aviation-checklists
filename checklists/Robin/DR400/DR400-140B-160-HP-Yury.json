@@ -2,7 +2,7 @@
   "metadata": {
     "name": "OEDKA",
     "makeAndModel": "DR40 / Robin DR400",
-    "modifiedTime": 1785051047
+    "modifiedTime": 1786637423
   },
   "groups": [
     {
@@ -192,11 +192,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Ammeter",
-              "expectation": "CHARGING",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Annunciator lights",
               "expectation": "TEST",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -204,6 +199,11 @@
             {
               "prompt": "Avionics switch",
               "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ammeter",
+              "expectation": "CHARGING",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
