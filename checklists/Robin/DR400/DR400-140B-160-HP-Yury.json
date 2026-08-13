@@ -461,7 +461,7 @@
           "items": [
             {
               "prompt": "Lean by EGT",
-              "expectation": "LOP -50 F",
+              "expectation": "ROP -50 F",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
